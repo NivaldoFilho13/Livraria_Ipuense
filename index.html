@@ -1,47 +1,123 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
-    </head>
-    <body>
-        <header>
-            <div class="rollback">
-                <a href=""><img src="" alt="foto" height="40px"></a>
-            </div>
-        </header>
-        <article>
-
-        </article>
-        <footer>
-            <div class="foter">
-                <h2>ENTRE EM CONTATO</h2>
-                    <ol>
-                        <strong>
-                            <h3>Instagram</h3>
-                            <li>
-                                <a href="https://www.instagram.com/nivaldofilho78?igsh=MXM2OXdwOWg5aXMwYQ==" target="_blank" rel="noopener noreferrer"><p>@nivaldofilho78</p><br></a>
-                            </li>
-                            <h3>Git hub</h3>
-                            <li>
-                                <a href="https://github.com/NivaldoFilho13" target="_blank" rel="noopener noreferrer"><p>@nivaldofilho13</p><br></a>
-                            <h3>Email</h3>
-                            <li>
-                                <a href=""><p>nvf.ipu15@gmail</p><br></a>
-                            </li>
-                            <h3>Likedin</h3>
-                            <li>
-                                <a href=""><p>Nivaldo Filho</p><br></a>
-                            </li>
-                        </strong>
-                    </ol>
-                <small>Todos os direitos reservados &copy Nivaldo filho - 2026</small>
-            </div>
-        </footer>
-    </body>
-    </html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Livros, papelaria e cultura em Ipu, Ceará."
+    />
+    <title>E10 Livraria & Papelaria Ipuense</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="barra-utilidades">
+      Entrega em Ipu/CE · Retire na loja · Encomende seu livro pelo WhatsApp
+    </div>
+    <header class="topo">
+      <div class="topo-container">
+        <a href="index.html" class="marca"
+          ><span class="marca-icone">📚</span
+          ><span>E10 Livraria <small>&amp; Papelaria Ipuense</small></span></a
+        >
+        <nav class="menu-principal">
+          <a href="#catalogo">Catálogo</a
+          ><a href="encomenda.html">Encomendar livro</a
+          ><a href="meus-pedidos.html">Meus pedidos</a>
+        </nav>
+        <div class="acoes-topo">
+          <a href="carrinho.html" class="link-carrinho"
+            >🛒 Carrinho
+            <span class="badge-carrinho" id="badge-carrinho">0</span></a
+          ><a href="login.html" class="btn btn-sm">Entrar</a
+          ><a href="cadastro.html" class="btn btn-sm btn-primario">Cadastrar</a>
+        </div>
+      </div>
+    </header>
+    <main class="conteudo">
+      <section class="faixa-hero">
+        <h1>Uma história nova começa aqui.</h1>
+        <p>
+          Livros, material escolar e presentes para alimentar sua curiosidade.
+          Compre online e escolha entre retirada na loja ou entrega em Ipu.
+        </p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" href="#catalogo">Ver catálogo</a
+          ><a class="btn" href="encomenda.html">Não encontrou? Encomende</a>
+        </div>
+      </section>
+      <section class="beneficios">
+        <div class="beneficio">
+          <strong>🚚 Entrega local</strong>Receba com praticidade em Ipu/CE.
+        </div>
+        <div class="beneficio">
+          <strong>🏪 Retire na loja</strong>Seu pedido separado para você.
+        </div>
+        <div class="beneficio">
+          <strong>📚 Livro sob encomenda</strong>Procuramos o título que você
+          quer.
+        </div>
+      </section>
+      <section id="catalogo">
+        <div class="secao-cabecalho">
+          <div>
+            <h2>Encontre sua próxima leitura</h2>
+            <p>Novidades, mais vendidos e tudo para estudar.</p>
+          </div>
+          <div class="atalhos-categorias" id="atalhos-categorias"></div>
+        </div>
+        <form class="filtros" id="filtros">
+          <input
+            id="busca"
+            type="search"
+            placeholder="Buscar por título ou autor..."
+          /><select id="categoria">
+            <option value="">Todas as categorias</option></select
+          ><button class="btn btn-primario">Buscar</button>
+        </form>
+        <div class="grade-produtos" id="lista-produtos"></div>
+      </section>
+      <section class="painel-contato">
+        <div>
+          <h2>Visite a E10</h2>
+          <p><strong>Estação 10: Livro, Cultura &amp; Cia</strong></p>
+          <p>Ipu, Ceará</p>
+          <p>Segunda a sábado, 8h às 18h</p>
+          <p>Instagram: @e10livraria.papelaria_ipuense</p>
+          <button
+            class="btn btn-primario"
+            data-whatsapp="Olá! Gostaria de saber mais sobre a E10 Livraria."
+          >
+            Chamar no WhatsApp
+          </button>
+        </div>
+        <iframe
+          class="mapa-loja"
+          title="Mapa de Ipu, Ceará"
+          loading="lazy"
+          src="https://www.google.com/maps?q=Ipu%2C%20CE&output=embed"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="rodape">
+      <div class="rodape-container">
+        <div>
+          <strong>E10 Livraria &amp; Papelaria Ipuense</strong>
+          <p>Estação 10: Livro, Cultura &amp; Cia — Ipu, Ceará.</p>
+        </div>
+        <div>
+          <strong>Atendimento</strong>
+          <p>Segunda a sábado, 8h às 18h</p>
+          <p>Instagram: @e10livraria.papelaria_ipuense</p>
+        </div>
+        <div>
+          <strong>Serviços</strong>
+          <p>Retirada na loja ou entrega em domicílio</p>
+          <p>Encomenda de livros sob consulta</p>
+        </div>
+      </div>
+      <p class="copy">© 2026 E10 Livraria.Ipuense &amp; Nivaldo Araújo</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
