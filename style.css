@@ -1,69 +1,205 @@
-            body{
-            margin: 0px;
-            }
+@import url("../css/style.css");
 
-            header {
-            background-color: #003cff; 
-            margin: 0;
-            padding: 10px;
-            width: 98.95%;
-            font-family: sans-serif;
-            }
-
-            a {
-            font-family: sans-serif;
-            font-style: normal;
-            }
-
-            h2{
-            margin:0;
-            }
-
-            body {
-            margin: 0;
-            }
-            
-            h1 {    
-            margin-top: 0;
-            margin-bottom: 0;
-            text-align: center;
-            }
-
-            h3{
-            margin:0
-            }
-
-            p {
-            margin: 0;
-            }
-
-            footer {
-            background-color: #000000; 
-            margin: 0;
-            padding: 10px;
-            border: 30px;
-            height: 20%;
-            font-family: sans-serif;
-            margin-top: 0;
-            color: white;
-            }
-
-            footer ol p{
-            text-align: left ;
-            }
-
-            footer ol h3{
-            text-align: left ;
-            font-family: sans-serif;
-            }
-
-            footer div a{
-            font-family: sans-serif;
-            color:whitesmoke;
-            text-decoration: none;
-            }
-
-            footer small{
-            text-align: center;
-            align-items: center;
-            }
+.barra-utilidades {
+  background: var(--dourado);
+  color: var(--marrom-escuro);
+  text-align: center;
+  padding: 7px 20px;
+  font-size: 0.82rem;
+  font-weight: bold;
+}
+.hero-acoes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.hero-acoes .btn {
+  color: var(--creme);
+}
+.hero-acoes .btn-primario {
+  color: var(--marrom-escuro);
+}
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0 35px;
+}
+.beneficio {
+  background: var(--branco);
+  padding: 16px;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  font-size: 0.9rem;
+}
+.beneficio strong {
+  display: block;
+  color: var(--marrom-escuro);
+  margin-bottom: 3px;
+}
+.secao-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin: 34px 0 14px;
+}
+.secao-cabecalho h2 {
+  margin: 0;
+}
+.atalhos-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.atalho-categoria {
+  border: 1px solid var(--marrom-claro);
+  color: var(--marrom);
+  background: var(--branco);
+  border-radius: 999px;
+  padding: 8px 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.atalho-categoria:hover,
+.atalho-categoria.ativo {
+  background: var(--marrom);
+  color: var(--creme);
+}
+.selo {
+  color: var(--verde-status);
+  font-weight: bold;
+  font-size: 0.78rem;
+}
+.selo.ultimas {
+  color: var(--vermelho);
+}
+.cartao-produto .btn {
+  margin-top: 8px;
+  color: var(--marrom-escuro);
+  border: 0;
+}
+.preco-antigo {
+  color: var(--marrom-claro);
+  text-decoration: line-through;
+  font-size: 0.84rem;
+}
+.cartao-produto .imagem-wrap {
+  position: relative;
+  display: block;
+}
+.etiqueta-promocao {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: var(--dourado);
+  color: var(--marrom-escuro);
+  font-weight: bold;
+  font-size: 0.72rem;
+}
+.painel-contato {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  margin-top: 45px;
+  background: var(--branco);
+  padding: 24px;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+.painel-contato h2 {
+  margin-top: 0;
+}
+.mapa-loja {
+  min-height: 260px;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+}
+.whatsapp-flutuante {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+  border: 0;
+  border-radius: 999px;
+  background: #25d366;
+  color: white;
+  padding: 13px 17px;
+  font:
+    bold 0.9rem Arial,
+    sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.produto-detalhe {
+  display: grid;
+  grid-template-columns: minmax(220px, 360px) 1fr;
+  gap: 36px;
+  align-items: start;
+}
+.produto-detalhe img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+.controle-qtd {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d8c9b8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.controle-qtd button {
+  background: var(--creme-escuro);
+  border: 0;
+  padding: 9px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.controle-qtd input {
+  border: 0;
+  width: 48px;
+  text-align: center;
+  padding: 9px 4px;
+}
+.linha-carrinho-produto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.linha-carrinho-produto img {
+  width: 46px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.aviso-demo {
+  font-size: 0.82rem;
+  color: var(--marrom-claro);
+  margin-top: 22px;
+}
+@media (max-width: 720px) {
+  .beneficios,
+  .painel-contato,
+  .produto-detalhe {
+    grid-template-columns: 1fr;
+  }
+  .secao-cabecalho {
+    align-items: start;
+    flex-direction: column;
+  }
+  .whatsapp-flutuante {
+    right: 14px;
+    bottom: 14px;
+  }
+  .tabela-carrinho {
+    display: block;
+    overflow-x: auto;
+  }
+}
